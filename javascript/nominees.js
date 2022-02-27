@@ -67,7 +67,7 @@ function createNominee() {
     name.className = 'name';
     
     var editIcon = document.createElement('i');
-    editIcon.className = 'fa fa-solid fa-edit clickable';
+    editIcon.className = 'fa fa-solid fa-pen-to-square clickable';
     editIcon.onclick = handleEdit;
         
     var trashIcon = document.createElement('i');
