@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <article class="main_card">
+        <img id="nuss_logo" src="../images/nuss_logo.png" alt="" srcset="../images/nuss_logo.png 960w"
+            sizes="(max-width: 426px) 65vw, 400px">
+        <h1 id="unit_name">انتخابات الهيئة الطلابية في كلية الهندسة المعلوماتية</h1>
+        <form class="main_form" action="">
+        </form>
+    </article>
+
+    <script>
+        let nominees = [
+            'محمد سالم دوماني',
+            'أحمد منصور',
+            'أسامة المصري',
+            'خالد الحسين',
+            'عمر المللا',
+            'محمد المحمد',
+            'محمد فارس المحني',
+            'همام الصاري',
+            'مجد الكعدة',
+            'سهيل الفهام',
+            'نور الأجدب',
+            'يامن قضماني'
+        ];
+        const main_form = document.getElementsByClassName('main_form')[0];
+
+        for (let i=1; i<=12; i++) {
+            let checkbox = document.createElement("input");
+            checkbox.className = 'hidden';
+            checkbox.id = `${i}`;
+            let label = document.createElement('label');
+            label.className = 'nominee';
+            label.htmlFor = `${i}`;
+            label.innerText = nominees[i-1];
+
+            main_form.appendChild(label);
+            main_form.appendChild(checkbox);
+        }
+
+        console.log('finished');
+    </script>
+
+</body>
+
+</html>

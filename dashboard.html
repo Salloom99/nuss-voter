@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/nuss_logo_ico.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container-flex">
+    <section class="card card--dashboard">
+        <div class="menu">
+            <div class="menu__banner">
+                <div class="menu__btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <span class="title title--right">
+                    كلية الهندسة الميكانيكية والكهربائية
+                </span>
+            </div>
+            <div class="menu__list menu__hidden">
+                <span class="state">العملية جارية</span>
+                <ul>
+                    <li>
+                        <i class="fa fa-solid fa-circle-pause fa-1x"></i>
+                        <a class="menu__item" href="#">إيقاف العملية</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-solid fa-circle-stop fa-1x"></i>
+                        <a class="menu__item" href="#">إنهاء العملية</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-solid fa-address-book fa-1x"></i>
+                        <a class="menu__item" href="/nominees.html">إدارة المرشحين</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-solid fa-clipboard fa-1x"></i>
+                        <a class="menu__item" href="">القائمة الانتخابية</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-solid fa-arrow-right-from-bracket fa-1x"></i>
+                        <a class="menu__item" href="/login.html">تسجيل الخروج</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <table class="nominees-table">
+            <colgroup>
+                <col class="table-index">
+                <col class="table-name">
+                <col class="table-count">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th style="text-align: start;">المرشح</th>
+                    <th>عدد الأصوات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-center">0</td>
+                    <td>العدد الكلي</td>
+                    <td class="col-counter"><span class="counter">271</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="filler">
+                        اذهب لقائمة إدارة المرشحين بالضغط على القائمة بالأعلى ثم أضف مرشحيك
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    </div>
+
+    <script src="./javascript/dashboard.js"></script>
+    <script src="./javascript/d2265b64cf.js" crossorigin="anonymous"></script>
+</body>
+</html>
