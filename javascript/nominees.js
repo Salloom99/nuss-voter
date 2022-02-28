@@ -41,15 +41,16 @@ function addNominee() {
     var nomineeName = addNomineeInput.value;
     addNomineeInput.value = '';
     if (nomineeName === '' ||
-        nominees.some( nominee => nominee.name === nomineeName))
+        nominees.some( nominee => nominee.name === nomineeName)) {
+            createSnackbar('لا يمكنك إضافة اسم فارغ');
             return;
+        }
 
     nominees.push({name: nomineeName, count: 0});
     var name = createNominee();
     name.innerText = nomineeName;
     
 }
-
 
 var addNomineeInput = document.querySelector('.add-nominee .input');
 var nomineesNode = document.querySelector('.nominees');
