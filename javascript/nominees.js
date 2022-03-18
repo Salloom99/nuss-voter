@@ -5,7 +5,7 @@ var nominees = [
     {name: 'عابد فهد', votes: 214},
     {name: 'جمال سليمان', votes: 201},
     {name: 'بسام طوسا', votes: 195},
-    {name: 'خالد تاجة', votes: 184},
+    {name: 'خالد تاجا', votes: 184},
     {name: 'دريد لحام', votes: 177},
     {name: 'غسان مسعود', votes: 162},
     {name: 'عباس النوري', votes: 161},
