@@ -67,7 +67,7 @@ body {
 .card--dashboard {
   box-sizing: border-box;
   margin: 1rem;
-  width: 95vw;
+  width: min(600px, 95vw);
 }
 
 
