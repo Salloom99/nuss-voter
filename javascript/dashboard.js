@@ -3,6 +3,34 @@ function handleClick() {
     document.querySelector('.menu__btn').classList.toggle("change");
 }
 
+const state =  document.querySelector('.state');
+const start = document.querySelector("a[href='/start']");
+const stop = document.querySelector("a[href='/stop']");
+
+
+function handleToggleState(e) {
+    e.preventDefault();
+    if ( state.textContent === "العملية جارية") {
+
+        start.textContent = "بدأ العملية";
+        state.textContent = "العملية متوقفة";
+    }
+    else {
+        start.textContent = "إيقاف العملية";
+        state.textContent = "العملية جارية";
+    }
+}
+
+function handleFinishState(e) {
+    e.preventDefault();
+    state.textContent = "العملية منتهية";
+    start.textContent = "بدأ العملية";
+}
+
+start.onclick = handleToggleState;
+stop.onclick = handleFinishState;
+
+
 document.querySelector('.menu__btn').onclick = handleClick;
 var table = document.querySelector('.nominees-table tbody');
 
