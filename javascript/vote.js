@@ -28,7 +28,7 @@ function createNominee(nominee) {
 
     const card = nomineeCardTemplate.content.cloneNode(true).children[0];
 
-    const name = card.querySelector('.name');
+    const name = card.querySelector('.manager__item__text');
     
     name.textContent = nominee.name;
     
@@ -44,9 +44,9 @@ function createNominee(nominee) {
 
 const nomineeCardTemplate = document.querySelector('[data-nominee-template]')
 
-const nomineesNode = document.querySelector('.normal-list');
+const nomineesNode = document.querySelector('.manager__list');
 const filterInput = document.getElementById('filter-input');
-document.querySelector('.fa-circle-xmark').addEventListener('click', ()=>{
+document.querySelector('.manager__header__btn').addEventListener('click', ()=>{
     filterInput.value = '';
     currentNominees.forEach(nominee =>
             nominee.element.classList.remove('hidden'));

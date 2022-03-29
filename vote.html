@@ -27,18 +27,22 @@
                     </span>
                 </div>
             </div>
-            <div class="search-nominee mx-auto">
-                <input class="input control" type="text" name="" id="filter-input" placeholder="أدخل اسما للبحث عنه">
-                <i class="fa fa-solid fa-circle-xmark fa-3x clickable"></i>
-            </div>
-            <ul class="normal-list flex-col">
-            </ul>
-            <template data-nominee-template>
-                <li class="vote-card">
-                    <input class="checkbox" type="checkbox" name="" id="">
-                    <span class="name"></span>
-                </li>
-            </template>
+            <section class="manager">
+                <div class="manager__header mx-auto">
+                    <input class="manager__header__input input control" type="text" name="" id="filter-input" placeholder="أدخل اسما للبحث عنه">
+                    <i class="manager__header__btn fa fa-solid fa-circle-xmark fa-3x clickable"></i>
+                </div>
+                <ul class="manager__list">
+                </ul>
+                <template data-nominee-template>
+                    <li class="manager__item">
+                        <input class="checkbox" type="checkbox" name="" id="">
+                        <span class="manager__item__text name"></span>
+                    </li>
+                </template>
+                <button class="manager__btn button control">انتخاب</button>
+            </section>
+
         </section>
         <div class="snackbar-stack"></div>    
         </div>
