@@ -27,25 +27,28 @@
                     </span>
                 </div>
             </div>
-            <section class="manager flex-col">
-                <div class="manager__header mx-auto">
-                    <input class="manager__header__input input control" type="text" name="" id="filter-input" placeholder="أدخل اسما للبحث عنه">
-                    <i id="clear" class="manager__header__btn fa fa-solid fa-circle-xmark fa-3x clickable"></i>
-                </div>
-                <ul class="manager__list">
-                </ul>
-                <template data-nominee-template>
-                    <li class="manager__item flex-card-flow">
-                        <input class="checkbox" type="checkbox" name="" id="">
-                        <span class="manager__item__text name"></span>
-                    </li>
-                </template>
-                <button class="manager__btn button control">انتخاب</button>
-            </section>
+            <form class="manager flex-col" action="/confirm.html" method="post">
+                <p class="desc mb-2">اختر 12 من المرشحين الذين تود إعطاءهم صوتك</p>
+
+                    <div class="manager__header mx-auto">
+                        <input class="manager__header__input input control" type="text" name="" id="filter-input" placeholder="أدخل اسما للبحث عنه">
+                        <i id="clear" class="manager__header__btn fa fa-solid fa-circle-xmark fa-3x clickable"></i>
+                    </div>
+                    <ul class="manager__list">
+                    </ul>
+                    <template data-nominee-template>
+                        <li class="manager__item flex-card-flow">
+                            <input class="checkbox" type="checkbox" name="" id="">
+                            <span class="manager__item__text name"></span>
+                        </li>
+                    </template>
+                    <button class="manager__btn button control">انتخاب</button>
+            </form>
         <div id="votes" class="votes">0/12</div>
         </section>
         <div class="snackbar-stack"></div>    
         </div>
+        <script src="./javascript/main.js"></script>
         <script src="./javascript/vote.js"></script>
         <script src="./javascript/fontawesome.js"></script>
 </body>

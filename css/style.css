@@ -462,7 +462,7 @@ select:focus, input:focus {
 .snackbar-stack {
   position: fixed;
   font-size: 2rem;
-  bottom: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -593,6 +593,11 @@ video {
   margin-left: auto;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
 /* Block */
 
 .manager__list {
@@ -630,14 +635,14 @@ video {
 
 .votes {
   position: fixed;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 3.5rem;
+  left: 2.5rem;
   z-index: 1;
-  width: 4rem;
-  height: 4rem;
-  background: var(--color-red);
+  width: 5rem;
+  height: 5rem;
+  background: var(--color-dark-red);
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: grid;
   place-content: center;
   color: white;
