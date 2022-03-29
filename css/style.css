@@ -586,6 +586,7 @@ video {
 
 
 
+
 /* Utility */
 
 .mx-auto {
@@ -697,4 +698,9 @@ video {
   margin-bottom: 0 !important;
   height: 0 !important;
   opacity: 0 !important;
+}
+
+.fa-circle-check {
+  margin: 1rem 0;
+  color: hsl(100, 70%, 40%);
 }
