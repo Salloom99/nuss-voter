@@ -589,13 +589,16 @@ video {
 /* Utility */
 
 .mx-auto {
+  display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
 .mb-2 {
-  margin-bottom: 2rem;
-  margin-top: 0;
+  /* margin-bottom: 2rem; */
+  /* margin-top: 0; */
+  word-break: keep-all;
+  margin: 0 1rem 2rem 1rem;
 }
 
 /* Block */
@@ -649,6 +652,15 @@ video {
 }
 
 /* Exception */
+
+.normal-list {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.normal-list li {
+  margin-bottom: 1rem;
+}
 
 .manager__header {
   width: 90%;
