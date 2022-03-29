@@ -629,14 +629,6 @@ video {
   align-items: center;
 }
 
-
-.manager {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
 .grid-card-flow {
   display: grid;
   grid-template-columns: 1fr 4rem 4rem;
@@ -657,13 +649,13 @@ video {
   margin-left: auto;
 }
 
+/* Block */
+
 .manager__list {
   padding: 0;
   list-style: none;
   width: 80%;
 }
-
-/* Block */
 
 .manager__item {
   margin-bottom: 2rem;
