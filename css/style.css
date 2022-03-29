@@ -456,62 +456,6 @@ select:focus, input:focus {
   transform: rotate(45deg) translate(-15px, 2px);
 }
 
-/* <--------------- Add Nominee Bar ---------------> */
-
-.add-nominee {
-  width: 90%;
-  border-radius: 15px;
-  background: var(--color-red);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.add-nominee input {
-  width: 70%;
-  margin: 10px;
-  position: relative;
-  background: #fff;
-  /* outline: none; */
-}
-
-.add-nominee .fa-circle-plus {
-  color: var(--color-pink);
-}
-
-.nominees-manager {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.nominees {
-  padding: 0;
-  width: 85%;
-}
-
-.nominee {
-  display: grid;
-  grid-template-columns: 1fr 4rem 4rem;
-  place-content: center;
-  width: 100%;
-  margin-top: 2rem;
-  height: 4.5rem;
-  border-radius: 10px;
-  background: var(--color-pink);
-  transition: all 0.3s ease-out;
-}
-
-.nominee .name {
-  flex-grow: 8;
-  margin-right: 3rem ;
-  font-size: 1.5rem;
-}
-
-.nominee .fa {
-  font-size: 2rem;
-}
 
 /* Snackbar */
 
@@ -681,6 +625,22 @@ video {
 .checkbox {
   width: 3rem;
   height: 3rem;
+  filter: hue-rotate(130deg);
+}
+
+.votes {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-red);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: grid;
+  place-content: center;
+  color: white;
 }
 
 /* Exception */
