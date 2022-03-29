@@ -585,11 +585,14 @@ video {
   word-break: break-all;
 }
 
+
 .fa-camera , .fa-qrcode {
   position: absolute;
   margin: 0;
   color: var(--color-red);
 }
+
+/* Border */
 
 .border {
   --border-padding: 2rem;
@@ -622,4 +625,50 @@ video {
 
 .left {
   left: var(--border-padding);
+}
+
+/* Composition */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Utility */
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.normal-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* Block */
+
+.vote-card {
+  width: 80%;
+  margin-bottom: 2rem;
+  height: 4.5rem;
+  border-radius: 10px;
+  background: var(--color-pink);
+  display: flex;
+  align-items: center;
+}
+
+.vote-card .name,
+.vote-card .checkbox {
+  margin-inline-start: 2rem;
+}
+
+.vote-card .name {
+  font-size: 1.5rem;
+}
+
+.checkbox {
+  width: 3rem;
+  height: 3rem;
 }
