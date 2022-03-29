@@ -35,12 +35,6 @@ body {
   outline: 0px solid transparent;
 }
 
-.hidden {
-  display: none;
-}
-
-
-
 /* <--------------- Container ---------------> */
 
 .container-full-height {
@@ -712,4 +706,8 @@ video {
 .manager__btn {
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
 }

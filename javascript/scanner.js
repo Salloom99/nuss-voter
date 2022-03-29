@@ -1,5 +1,6 @@
 function onScanSuccess(decodedText, decodedResult) {
-  desc.textContent = decodedText;
+  // desc.textContent = decodedText;
+  window.location.href = '/vote.html';
 }
 
 function onScanFailure(error) {
