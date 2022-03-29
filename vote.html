@@ -27,17 +27,22 @@
                     </span>
                 </div>
             </div>
+            <div class="search-nominee mx-auto">
+                <input class="input control" type="text" name="" id="filter-input" placeholder="أدخل اسما للبحث عنه">
+                <i class="fa fa-solid fa-circle-xmark fa-3x clickable"></i>
+            </div>
             <ul class="normal-list flex-col">
+            </ul>
+            <template data-nominee-template>
                 <li class="vote-card">
                     <input class="checkbox" type="checkbox" name="" id="">
-                    <span class="name">
-                        محمد سالم دوماني
-                    </span>
+                    <span class="name"></span>
                 </li>
-            </ul>
+            </template>
         </section>
         <div class="snackbar-stack"></div>    
         </div>
         <script src="./javascript/vote.js"></script>
+        <script src="./javascript/fontawesome.js"></script>
 </body>
 </html>

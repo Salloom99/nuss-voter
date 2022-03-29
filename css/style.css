@@ -659,6 +659,10 @@ video {
   align-items: center;
 }
 
+.vote-card.hidden {
+  display: none;
+}
+
 .vote-card .name,
 .vote-card .checkbox {
   margin-inline-start: 2rem;
@@ -671,4 +675,28 @@ video {
 .checkbox {
   width: 3rem;
   height: 3rem;
+}
+
+/* Exception */
+
+.fa-circle-xmark {
+  color: var(--color-pink);
+}
+
+.search-nominee {
+  width: 90%;
+  border-radius: 15px;
+  background: var(--color-red);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-nominee input {
+  width: 70%;
+  margin: 10px;
+  position: relative;
+  background: #fff;
+  /* outline: none; */
 }
