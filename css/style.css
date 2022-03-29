@@ -77,8 +77,9 @@ body {
   display: block;
   text-align: center;
   font-size: 2.5rem;
-  color: #333;
   font-weight: 700;
+  color: #333;
+  margin-bottom: .5em;
 }
 
 .title--right {
@@ -548,4 +549,76 @@ select:focus, input:focus {
   height: 0;
   margin-bottom: 0;
   opacity: 0;
+}
+
+
+/* Scanner */
+
+.scanner {
+  position: relative;
+  background: #ddd;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reader {
+  width: calc(100%);
+  height: calc(100%);
+  overflow: hidden;
+}
+
+video {
+  width: 100% !important;
+  border-radius: 5px;
+}
+
+.desc {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.fa-camera , .fa-qrcode {
+  position: absolute;
+  margin: 0;
+  color: var(--color-red);
+}
+
+.border {
+  --border-padding: 2rem;
+  --border-thickness: 4px; 
+  position: absolute;
+  background: var(--color-red);
+}
+
+.h {
+  width: calc(var(--border-padding));
+  height: var(--border-thickness);
+}
+
+.v {
+  width: var(--border-thickness);
+  height: var(--border-padding); 
+}
+
+.top {
+  top: var(--border-padding);
+}
+
+.bottom {
+  bottom: var(--border-padding);
+}
+
+.right {  
+  right: var(--border-padding);
+}
+
+.left {
+  left: var(--border-padding);
 }
