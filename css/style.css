@@ -513,12 +513,6 @@ select:focus, input:focus {
   font-size: 2rem;
 }
 
-.delete {
-  margin-top: 0 !important;
-  height: 0;
-  opacity: 0;
-}
-
 /* Snackbar */
 
 .snackbar-stack {
@@ -642,6 +636,20 @@ video {
   align-items: center;
 }
 
+
+.grid-card-flow {
+  display: grid;
+  grid-template-columns: 1fr 4rem 4rem;
+  align-items: center;
+}
+
+.flex-card-flow {
+  display: flex;
+  align-items: center;
+}
+
+
+
 /* Utility */
 
 .mx-auto {
@@ -662,8 +670,7 @@ video {
   height: 4.5rem;
   border-radius: 10px;
   background: var(--color-pink);
-  display: flex;
-  align-items: center;
+  transition: all 0.3s ease-out;
 }
 
 .manager__item__text,
@@ -671,8 +678,12 @@ video {
   margin-inline-start: 2rem;
 }
 
-.manager__item__text{
+.manager__item__text {
   font-size: 1.5rem;
+}
+
+.manager__item__btn {
+  font-size: 2rem;
 }
 
 .checkbox {
@@ -682,10 +693,6 @@ video {
 
 /* Exception */
 
-.manager__header__btn {
-  color: var(--color-pink);
-}
-
 .manager__header {
   width: 90%;
   border-radius: 15px;
@@ -694,6 +701,10 @@ video {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+.manager__header__btn {
+  color: var(--color-pink);
 }
 
 .manager__header__input {
@@ -710,4 +721,11 @@ video {
 
 .hidden {
   display: none;
+}
+
+
+.delete {
+  margin-bottom: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
 }
