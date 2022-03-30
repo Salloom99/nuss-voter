@@ -519,7 +519,18 @@ video {
 .desc {
   font-size: 1.5rem;
   text-align: center;
+  margin-inline: 1rem;
+}
+
+.top-desc {
+  margin-top: 0;
+}
+
+.bot-desc {
   margin-bottom: 0;
+}
+
+.breakable-desc {
   word-break: break-all;
 }
 
@@ -596,10 +607,7 @@ video {
 }
 
 .mb-2 {
-  /* margin-bottom: 2rem; */
-  /* margin-top: 0; */
-  word-break: keep-all;
-  margin: 0 1rem 2rem 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Block */
