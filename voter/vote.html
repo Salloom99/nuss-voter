@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/main.js" defer></script>
+    <script src="../javascript/vote.js" defer></script>
+    <script src="../javascript/fontawesome.js" defer></script>
     <title>Vote</title>
 </head>
+
 <body>
     <div class="container-flex">
         <section class="card card--dashboard">
@@ -29,27 +34,25 @@
             </div>
             <form class="manager flex-col" action="/voter/confirm.html">
                 <p class="desc top-desc mb-2">اختر 12 من المرشحين الذين تود إعطاءهم صوتك</p>
-
-                    <div class="manager__header">
-                        <input class="manager__header__input input control" type="text" name="" id="filter-input" placeholder="أدخل اسما للبحث عنه">
-                        <i id="clear" class="manager__header__btn fa fa-solid fa-circle-xmark fa-3x clickable"></i>
-                    </div>
-                    <ul class="manager__list">
-                    </ul>
-                    <template data-nominee-template>
-                        <li class="manager__item flex-card-flow">
-                            <input class="checkbox" type="checkbox" name="" id="">
-                            <span class="manager__item__text name"></span>
-                        </li>
-                    </template>
-                    <button class="manager__btn button control">انتخاب</button>
+                <div class="manager__header">
+                    <input class="manager__header__input input control" type="text" name="" id="filter-input"
+                        placeholder="أدخل اسما للبحث عنه">
+                    <i id="clear" class="manager__header__btn fa fa-solid fa-circle-xmark fa-3x clickable"></i>
+                </div>
+                <ul class="manager__list">
+                </ul>
+                <template data-nominee-template>
+                    <li class="manager__item flex-card-flow">
+                        <input class="checkbox" type="checkbox" name="" id="">
+                        <span class="manager__item__text name"></span>
+                    </li>
+                </template>
+                <button class="manager__btn button control">انتخاب</button>
             </form>
-        <div id="votes" class="votes">0/12</div>
+            <div id="votes" class="votes">0/12</div>
         </section>
-        <div class="snackbar-stack"></div>    
-        </div>
-        <script src="../javascript/main.js"></script>
-        <script src="../javascript/vote.js"></script>
-        <script src="../javascript/fontawesome.js"></script>
+        <div class="snackbar-stack"></div>
+    </div>
 </body>
+
 </html>

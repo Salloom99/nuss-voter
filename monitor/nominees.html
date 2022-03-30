@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/nominees.js" defer></script>
+    <script src="../javascript/main.js" defer></script>
+    <script src="../javascript/fontawesome.js" crossorigin="anonymous" defer></script>
     <title>Nominees</title>
 </head>
 
@@ -31,14 +34,16 @@
             </div>
             <div class="manager flex-col">
                 <div class="manager__header">
-                    <input class="manager__header__input input control" type="text" name="" id="addInput" placeholder="أدخل اسما لإضافته">
+                    <input class="manager__header__input input control" type="text" name="" id="addInput"
+                        placeholder="أدخل اسما لإضافته">
                     <i id="add" class="manager__header__btn fa fa-solid fa-circle-plus fa-3x clickable"></i>
                 </div>
                 <ul class="manager__list" data-nominees-container></ul>
                 <template data-nominee-template>
                     <li class="manager__item grid-card-flow delete">
                         <span class="manager__item__text"></span>
-                        <i id="edit" class="manager__item__btn fa fa-solid fa-pen-to-square clickable" aria-hidden="true"></i>
+                        <i id="edit" class="manager__item__btn fa fa-solid fa-pen-to-square clickable"
+                            aria-hidden="true"></i>
                         <i id="delete" class="manager__item__btn fa fa-solid fa-trash clickable" aria-hidden="true"></i>
                     </li>
                 </template>
@@ -46,9 +51,6 @@
         </section>
         <div class="snackbar-stack"></div>
     </div>
-    <script src="../javascript/nominees.js"></script>
-    <script src="../javascript/main.js"></script>
-    <script src="../javascript/fontawesome.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
