@@ -78,7 +78,7 @@ document.querySelector('form').onsubmit = validateForm;
 document.getElementById("clear").addEventListener("click", clearSearch);
 filterInput.oninput = (e) => filterNominees(e.target.value);
 document.querySelector(".menu__btn").onclick = () => {
-  window.location.href = "/dashboard.html";
+  history.back();
 };
 
 

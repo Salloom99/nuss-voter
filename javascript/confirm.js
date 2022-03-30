@@ -16,7 +16,11 @@ var nominees = [
 document.getElementById('confirm').onclick = () => {
     window.location.href = '/thanks.html';
 };
+document.querySelector(".menu__btn").onclick = () => {
+  history.back();
+};
 const list = document.querySelector('.normal-list');
+
 
 nominees.forEach(nominee => {
     const li = document.createElement('li');
