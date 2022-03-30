@@ -78,7 +78,7 @@ const nomineesNode = document.querySelector("[data-nominees-container]");
 
 document.getElementById("add").onclick = addNominee;
 document.querySelector(".menu__btn").onclick = () => {
-  window.location.href = "/dashboard.html";
+  history.back();
 };
 document.querySelector(".input").addEventListener("keyup", (event) => {
   if (event.key === "Enter") addNominee();

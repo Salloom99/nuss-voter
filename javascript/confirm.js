@@ -14,7 +14,7 @@ var nominees = [
 ];
 
 document.getElementById('confirm').onclick = () => {
-    window.location.href = '/thanks.html';
+    window.location.href = '/voter/thanks.html';
 };
 document.querySelector(".menu__btn").onclick = () => {
   history.back();
