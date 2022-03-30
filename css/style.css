@@ -618,6 +618,33 @@ video {
   width: 80%;
 }
 
+
+.manager__header {
+  width: 90%;
+  border-radius: 15px;
+  background: var(--color-red);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.manager__header__btn {
+  color: var(--color-pink);
+}
+
+.manager__header__input {
+  width: 70%;
+  margin: 10px;
+  position: relative;
+  background: #fff;
+}
+
+.manager__btn {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
 .manager__item {
   margin-bottom: 2rem;
   height: 4.5rem;
@@ -660,6 +687,26 @@ video {
   color: white;
 }
 
+.card-link {
+  display: grid;
+  place-content: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-light-pink);
+  background: var(--color-red);
+  margin-top: 2rem;
+}
+
+@media (min-width: 426px) {
+  .card-link {
+    margin-top: 0;
+    margin: 1rem;
+  }
+}
+
 /* Exception */
 
 .normal-list {
@@ -669,32 +716,6 @@ video {
 
 .normal-list li {
   margin-bottom: 1rem;
-}
-
-.manager__header {
-  width: 90%;
-  border-radius: 15px;
-  background: var(--color-red);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.manager__header__btn {
-  color: var(--color-pink);
-}
-
-.manager__header__input {
-  width: 70%;
-  margin: 10px;
-  position: relative;
-  background: #fff;
-}
-
-.manager__btn {
-  margin-top: 0;
-  margin-bottom: 2rem;
 }
 
 .hidden {
